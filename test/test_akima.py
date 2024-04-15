@@ -5,12 +5,13 @@ from akima86 import akima86
 import numpy as np
 
 try:
-  import matplotlib as mpl
-  mpl.use('Agg')
-  import matplotlib.pyplot as plt
-  plotfig = True
+    import matplotlib as mpl
+    mpl.use('Agg')
+    import matplotlib.pyplot as plt
+    plotfig = True
 except:
-  plotfig = False
+    Print("Unable to load matplotlib. Not plotting output file.")
+    plotfig = False
 
 def trunc(values, decs=0):
     return np.trunc(values*10**decs)/(10**decs)
@@ -65,4 +66,5 @@ if plotfig:
     ax.plot(xi,yi2,'b-',label='Akima86, 6')
     ax.legend()
     ax.grid(True,linestyle=':')
+    print("Saving test image to file: akima86_test.png")
     fig.savefig('akima86_test.png',dpi=200,bbox_inches='tight')

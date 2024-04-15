@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
 import numpy as np
+import numpy.typing as npt
 from uvipia_omp import uvipia
 
-def interpolate(xd: np.typing.NDArray,
-                yd: np.typing.NDArray,
-                xi: np.typing.NDArray,
-                degree: int = 3):
+def interpolate(xd: npt.ArrayLike,
+                yd: npt.ArrayLike,
+                xi: npt.ArrayLike,
+                degree: int = 3) -> np.ndarray:
   '''
   Python wrapper for the Improved Akima method from Akima (1986).
 
