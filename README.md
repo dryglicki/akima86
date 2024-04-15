@@ -10,11 +10,11 @@ Installation:
 `python setup.py install`
 
 (to change default fortran compiler you can use e.g.
- python setup.py build config_fc --fcompiler=g95)
+ `python setup.py build config_fc --fcompiler=g95`)
 
 Citation:
 Akima, H., 1986: A method of univariate interpolation that has
-    the accuracy of a third-degree polynomial. NTIA Report 86-208. 76 pp.
+    the accuracy of a third-degree polynomial. [NTIA Report 86-208. 76 pp.](https://its.ntia.gov/publications/details.aspx?pub=2231)
 
 Legal:
 Permission to use, copy, modify, and distribute this software and its
