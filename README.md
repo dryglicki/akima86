@@ -7,7 +7,7 @@ Requires: Numpy and a Fortran compiler supported by f2py and OpenMP;
 
 Installation:
 
-python setup.py install
+`python setup.py install`
 
 (to change default fortran compiler you can use e.g.
  python setup.py build config_fc --fcompiler=g95)
