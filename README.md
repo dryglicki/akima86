@@ -1,5 +1,5 @@
 # The Improved Akima ('86) Method
-A python implementation of the Improved Akima Interpolation Method. The `akima` interpolation found in scipy or Matlab is the original algorithm in 1970.
+A python implementation of the Improved Akima Interpolation Method. The `akima` interpolation found in scipy or Matlab is the original algorithm from 1970.
 Akima wrote a technical document in 1986 (linked below) that highlighted weaknesses in the original method and provided proposed improvements.
 
 # Installation
